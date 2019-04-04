@@ -18,6 +18,21 @@ public class CalculatorApplicationTests {
 	}
 
 	@Test
+	public void testSub(){
+		Assert.assertEquals(3, calculator.sub(6,3));
+	}
+
+	@Test
+	public void testMult(){
+		Assert.assertEquals(9, calculator.mult(3,3));
+	}
+
+	@Test
+	public void testDiv(){
+		Assert.assertEquals(5, calculator.div(10,2));
+	}
+
+	@Test
 	public void contextLoads() {
 	}
 

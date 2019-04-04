@@ -15,4 +15,22 @@ public class CalculatorController {
         return String.valueOf(calculator.sum(a,b));
 
     }
+
+    @RequestMapping("/sub")
+    public String sub(@RequestParam Integer a , @RequestParam Integer b){
+        return String.valueOf(calculator.sub(a,b));
+
+    }
+
+    @RequestMapping("/mult")
+    public String mult(@RequestParam Integer a , @RequestParam Integer b){
+        return String.valueOf(calculator.mult(a,b));
+
+    }
+
+    @RequestMapping("/div")
+    public String div(@RequestParam Integer a , @RequestParam Integer b){
+        return String.valueOf(calculator.div(a,b));
+
+    }
 }
